@@ -39,7 +39,7 @@ const App = () => {
     <div className="App">      
       <input
         placeholder="start"
-        onChange={e => updateInputValues('start', e.target.value)}
+        onChange={e => updateInputValues('banana', e.target.value)}
       />
       <input
         onChange={e => updateInputValues('limit', e.target.value)}
