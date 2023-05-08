@@ -49,7 +49,6 @@ app.get('/coins', function(req, res) {
     .catch(err => res.json({ error: err }))
 })
 
-
 /**********************
  * Example get method *
  **********************/
