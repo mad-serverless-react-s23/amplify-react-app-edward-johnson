@@ -49,6 +49,19 @@ app.get('/coins', function(req, res) {
     .catch(err => res.json({ error: err }))
 })
 
+/* Coins route except repurposed for Project 3's GitHub api */
+
+app.get('/born', function (req, res) {
+
+  let githubApiUrl = `https://api.github.com/users/emjohnson3`;
+
+  axios.get(born)
+    .then((response) => {
+      res.json({ born: response.data});
+    })
+    .catch(err => res.json({ error: err }))
+});
+
 /**********************
  * Example get method *
  **********************/
